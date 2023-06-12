@@ -7,5 +7,6 @@ import com.isaalves.viagemcerta.entities.Location;
 
 @Repository
 public interface LocationRepository extends JpaRepository<Location, Long> {
-
+	
+	Location findByName(String name);
 }
